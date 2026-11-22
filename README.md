@@ -8,7 +8,7 @@ One Taste of Strawberry. A macro close-up of a single ripe strawberry — gliste
 node main.ts
 ```
 
-Writes `/output/entry.png` (832×832 PNG, 981,722 bytes).
+Writes `/output/entry.png` (832×832 PNG, 969,870 bytes). The program validates the embedded picture first — PNG signature, IHDR chunk, IEND trailer, dimensions within 1024×1024, size within 1 MiB — then writes it and reads it back to confirm it is byte-identical.
 
 ---
 
